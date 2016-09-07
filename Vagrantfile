@@ -80,4 +80,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end
   end
 
+  config.push.define "atlas" do |push|
+    push.app = "stigsb/playa-mesos"
+  end
+
 end
